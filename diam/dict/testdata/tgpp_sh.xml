@@ -1,0 +1,300 @@
+<diameter>
+  <application type="auth" name="TGPP Sh" id="16777217">
+    <vendor id="10415" name="TGPP"/>
+    <command code="306" short="UD" name="User-Data">
+      <request>
+        <rule avp="Session-Id" required="True" max="1"/>
+        <rule avp="Vendor-Specific-Application-Id" required="True" max="1"/>
+        <rule avp="Auth-Session-State" required="True" max="1"/>
+        <rule avp="Origin-Host" required="True" max="1"/>
+        <rule avp="Origin-Realm" required="True" max="1"/>
+        <rule avp="Destination-Realm" required="True" max="1"/>
+        <rule avp="User-Identity" required="True" max="1"/>
+        <rule avp="Data-Reference" required="True" max="1"/>
+        <rule avp="Drmp" required="False" max="1"/>
+        <rule avp="Destination-Host" required="False" max="1"/>
+        <rule avp="Supported-Features" required="False" max="1"/>
+        <rule avp="Wildcarded-Public-Identity" required="False" max="1"/>
+        <rule avp="Wildcarded-Impu" required="False" max="1"/>
+        <rule avp="Server-Name" required="False" max="1"/>
+        <rule avp="Service-Indication" required="False" max="1"/>
+        <rule avp="Identity-Set" required="False" max="1"/>
+        <rule avp="Requested-Domain" required="False" max="1"/>
+        <rule avp="Current-Location" required="False" max="1"/>
+        <rule avp="Dsai-Tag" required="False" max="1"/>
+        <rule avp="Session-Priority" required="False" max="1"/>
+        <rule avp="User-Name" required="False" max="1"/>
+        <rule avp="Requested-Nodes" required="False" max="1"/>
+        <rule avp="Serving-Node-Indication" required="False" max="1"/>
+        <rule avp="Pre-Paging-Supported" required="False" max="1"/>
+        <rule avp="Local-Time-Zone-Indication" required="False" max="1"/>
+        <rule avp="Udr-Flags" required="False" max="1"/>
+        <rule avp="Call-Reference-Info" required="False" max="1"/>
+        <rule avp="Oc-Supported-Features" required="False" max="1"/>
+        <rule avp="Proxy-Info" required="False" max="1"/>
+        <rule avp="Route-Record" required="False" max="1"/>
+      </request>
+      <answer>
+        <rule avp="Session-Id" required="True" max="1"/>
+        <rule avp="Vendor-Specific-Application-Id" required="True" max="1"/>
+        <rule avp="Auth-Session-State" required="True" max="1"/>
+        <rule avp="Origin-Host" required="True" max="1"/>
+        <rule avp="Origin-Realm" required="True" max="1"/>
+        <rule avp="Drmp" required="False" max="1"/>
+        <rule avp="Result-Code" required="False" max="1"/>
+        <rule avp="Experimental-Result" required="False" max="1"/>
+        <rule avp="Supported-Features" required="False" max="1"/>
+        <rule avp="Wildcarded-Public-Identity" required="False" max="1"/>
+        <rule avp="Wildcarded-Impu" required="False" max="1"/>
+        <rule avp="User-Data" required="False" max="1"/>
+        <rule avp="Oc-Supported-Features" required="False" max="1"/>
+        <rule avp="Oc-Olr" required="False" max="1"/>
+        <rule avp="Failed-Avp" required="False" max="1"/>
+        <rule avp="Proxy-Info" required="False" max="1"/>
+        <rule avp="Route-Record" required="False" max="1"/>
+      </answer>
+    </command>
+    <command code="307" short="PU" name="Profile-Update">
+      <request>
+        <rule avp="Session-Id" required="True" max="1"/>
+        <rule avp="Vendor-Specific-Application-Id" required="True" max="1"/>
+        <rule avp="Auth-Session-State" required="True" max="1"/>
+        <rule avp="Origin-Host" required="True" max="1"/>
+        <rule avp="Origin-Realm" required="True" max="1"/>
+        <rule avp="Destination-Realm" required="True" max="1"/>
+        <rule avp="User-Identity" required="True" max="1"/>
+        <rule avp="Data-Reference" required="True" max="1"/>
+        <rule avp="User-Data" required="True" max="1"/>
+        <rule avp="Drmp" required="False" max="1"/>
+        <rule avp="Destination-Host" required="False" max="1"/>
+        <rule avp="Supported-Features" required="False" max="1"/>
+        <rule avp="Wildcarded-Public-Identity" required="False" max="1"/>
+        <rule avp="Wildcarded-Impu" required="False" max="1"/>
+        <rule avp="User-Name" required="False" max="1"/>
+        <rule avp="Oc-Supported-Features" required="False" max="1"/>
+        <rule avp="Proxy-Info" required="False" max="1"/>
+        <rule avp="Route-Record" required="False" max="1"/>
+      </request>
+      <answer>
+        <rule avp="Session-Id" required="True" max="1"/>
+        <rule avp="Vendor-Specific-Application-Id" required="True" max="1"/>
+        <rule avp="Auth-Session-State" required="True" max="1"/>
+        <rule avp="Origin-Host" required="True" max="1"/>
+        <rule avp="Origin-Realm" required="True" max="1"/>
+        <rule avp="Drmp" required="False" max="1"/>
+        <rule avp="Result-Code" required="False" max="1"/>
+        <rule avp="Experimental-Result" required="False" max="1"/>
+        <rule avp="Wildcarded-Public-Identity" required="False" max="1"/>
+        <rule avp="Wildcarded-Impu" required="False" max="1"/>
+        <rule avp="Repository-Data-Id" required="False" max="1"/>
+        <rule avp="Data-Reference" required="False" max="1"/>
+        <rule avp="Supported-Features" required="False" max="1"/>
+        <rule avp="Oc-Supported-Features" required="False" max="1"/>
+        <rule avp="Oc-Olr" required="False" max="1"/>
+        <rule avp="Failed-Avp" required="False" max="1"/>
+        <rule avp="Proxy-Info" required="False" max="1"/>
+        <rule avp="Route-Record" required="False" max="1"/>
+      </answer>
+    </command>
+    <command code="308" short="SN" name="Subscribe-Notifications">
+      <request>
+        <rule avp="Session-Id" required="True" max="1"/>
+        <rule avp="Vendor-Specific-Application-Id" required="True" max="1"/>
+        <rule avp="Auth-Session-State" required="True" max="1"/>
+        <rule avp="Origin-Host" required="True" max="1"/>
+        <rule avp="Origin-Realm" required="True" max="1"/>
+        <rule avp="Destination-Realm" required="True" max="1"/>
+        <rule avp="User-Identity" required="True" max="1"/>
+        <rule avp="Subs-Req-Type" required="True" max="1"/>
+        <rule avp="Data-Reference" required="True" max="1"/>
+        <rule avp="Drmp" required="False" max="1"/>
+        <rule avp="Destination-Host" required="False" max="1"/>
+        <rule avp="Supported-Features" required="False" max="1"/>
+        <rule avp="Wildcarded-Public-Identity" required="False" max="1"/>
+        <rule avp="Wildcarded-Impu" required="False" max="1"/>
+        <rule avp="Service-Indication" required="False" max="1"/>
+        <rule avp="Send-Data-Indication" required="False" max="1"/>
+        <rule avp="Server-Name" required="False" max="1"/>
+        <rule avp="Identity-Set" required="False" max="1"/>
+        <rule avp="Expiry-Time" required="False" max="1"/>
+        <rule avp="Dsai-Tag" required="False" max="1"/>
+        <rule avp="One-Time-Notification" required="False" max="1"/>
+        <rule avp="User-Name" required="False" max="1"/>
+        <rule avp="Oc-Supported-Features" required="False" max="1"/>
+        <rule avp="Proxy-Info" required="False" max="1"/>
+        <rule avp="Route-Record" required="False" max="1"/>
+      </request>
+      <answer>
+        <rule avp="Session-Id" required="True" max="1"/>
+        <rule avp="Vendor-Specific-Application-Id" required="True" max="1"/>
+        <rule avp="Auth-Session-State" required="True" max="1"/>
+        <rule avp="Origin-Host" required="True" max="1"/>
+        <rule avp="Origin-Realm" required="True" max="1"/>
+        <rule avp="Drmp" required="False" max="1"/>
+        <rule avp="Result-Code" required="False" max="1"/>
+        <rule avp="Experimental-Result" required="False" max="1"/>
+        <rule avp="Wildcarded-Public-Identity" required="False" max="1"/>
+        <rule avp="Wildcarded-Impu" required="False" max="1"/>
+        <rule avp="Supported-Features" required="False" max="1"/>
+        <rule avp="User-Data" required="False" max="1"/>
+        <rule avp="Expiry-Time" required="False" max="1"/>
+        <rule avp="Oc-Supported-Features" required="False" max="1"/>
+        <rule avp="Oc-Olr" required="False" max="1"/>
+        <rule avp="Failed-Avp" required="False" max="1"/>
+        <rule avp="Proxy-Info" required="False" max="1"/>
+        <rule avp="Route-Record" required="False" max="1"/>
+      </answer>
+    </command>
+    <command code="309" short="PN" name="Push-Notification">
+      <request>
+        <rule avp="Session-Id" required="True" max="1"/>
+        <rule avp="Vendor-Specific-Application-Id" required="True" max="1"/>
+        <rule avp="Auth-Session-State" required="True" max="1"/>
+        <rule avp="Origin-Host" required="True" max="1"/>
+        <rule avp="Origin-Realm" required="True" max="1"/>
+        <rule avp="Destination-Host" required="True" max="1"/>
+        <rule avp="Destination-Realm" required="True" max="1"/>
+        <rule avp="User-Identity" required="True" max="1"/>
+        <rule avp="User-Data" required="True" max="1"/>
+        <rule avp="Drmp" required="False" max="1"/>
+        <rule avp="Supported-Features" required="False" max="1"/>
+        <rule avp="Wildcarded-Public-Identity" required="False" max="1"/>
+        <rule avp="Wildcarded-Impu" required="False" max="1"/>
+        <rule avp="User-Name" required="False" max="1"/>
+        <rule avp="Proxy-Info" required="False" max="1"/>
+        <rule avp="Route-Record" required="False" max="1"/>
+      </request>
+      <answer>
+        <rule avp="Session-Id" required="True" max="1"/>
+        <rule avp="Vendor-Specific-Application-Id" required="True" max="1"/>
+        <rule avp="Auth-Session-State" required="True" max="1"/>
+        <rule avp="Origin-Host" required="True" max="1"/>
+        <rule avp="Origin-Realm" required="True" max="1"/>
+        <rule avp="Drmp" required="False" max="1"/>
+        <rule avp="Result-Code" required="False" max="1"/>
+        <rule avp="Experimental-Result" required="False" max="1"/>
+        <rule avp="Supported-Features" required="False" max="1"/>
+        <rule avp="Failed-Avp" required="False" max="1"/>
+        <rule avp="Proxy-Info" required="False" max="1"/>
+        <rule avp="Route-Record" required="False" max="1"/>
+      </answer>
+    </command>
+    <avp name="User-Name" code="1">
+      <data type="UTF8String"/>
+    </avp>
+    <avp name="Vendor-Specific-Application-Id" code="260">
+      <data type="Grouped"/>
+    </avp>
+    <avp name="Session-Id" code="263">
+      <data type="UTF8String"/>
+    </avp>
+    <avp name="Origin-Host" code="264">
+      <data type="DiameterIdentity"/>
+    </avp>
+    <avp name="Session-Priority" code="650" vendor-id="10415">
+      <data type="Enumerated"/>
+    </avp>
+    <avp name="Result-Code" code="268">
+      <data type="Unsigned32"/>
+    </avp>
+    <avp name="Auth-Session-State" code="277">
+      <data type="Enumerated"/>
+    </avp>
+    <avp name="Failed-Avp" code="279">
+      <data type="Grouped"/>
+    </avp>
+    <avp name="Route-Record" code="282">
+      <data type="DiameterIdentity"/>
+    </avp>
+    <avp name="Destination-Realm" code="283">
+      <data type="DiameterIdentity"/>
+    </avp>
+    <avp name="Proxy-Info" code="284">
+      <data type="Grouped"/>
+    </avp>
+    <avp name="Destination-Host" code="293">
+      <data type="DiameterIdentity"/>
+    </avp>
+    <avp name="Origin-Realm" code="296">
+      <data type="DiameterIdentity"/>
+    </avp>
+    <avp name="Experimental-Result" code="297">
+      <data type="Grouped"/>
+    </avp>
+    <avp name="Drmp" code="301">
+      <data type="Enumerated"/>
+    </avp>
+    <avp name="User-Identity" code="700" vendor-id="10415">
+      <data type="Grouped"/>
+    </avp>
+    <avp name="User-Data" code="702" vendor-id="10415">
+      <data type="OctetString"/>
+    </avp>
+    <avp name="Data-Reference" code="703" vendor-id="10415">
+      <data type="Enumerated"/>
+    </avp>
+    <avp name="Service-Indication" code="704" vendor-id="10415">
+      <data type="OctetString"/>
+    </avp>
+    <avp name="Subs-Req-Type" code="705" vendor-id="10415">
+      <data type="Enumerated"/>
+    </avp>
+    <avp name="Requested-Domain" code="706" vendor-id="10415">
+      <data type="Enumerated"/>
+    </avp>
+    <avp name="Identity-Set" code="708" vendor-id="10415">
+      <data type="Enumerated"/>
+    </avp>
+    <avp name="Expiry-Time" code="709" vendor-id="10415">
+      <data type="Time"/>
+    </avp>
+    <avp name="Send-Data-Indication" code="710" vendor-id="10415">
+      <data type="Enumerated"/>
+    </avp>
+    <avp name="Dsai-Tag" code="711" vendor-id="10415">
+      <data type="OctetString"/>
+    </avp>
+    <avp name="One-Time-Notification" code="712" vendor-id="10415">
+      <data type="Enumerated"/>
+    </avp>
+    <avp name="Requested-Nodes" code="713" vendor-id="10415">
+      <data type="Unsigned32"/>
+    </avp>
+    <avp name="Serving-Node-Indication" code="714" vendor-id="10415">
+      <data type="Enumerated"/>
+    </avp>
+    <avp name="Repository-Data-Id" code="715" vendor-id="10415">
+      <data type="Grouped"/>
+    </avp>
+    <avp name="Pre-Paging-Supported" code="717" vendor-id="10415">
+      <data type="Enumerated"/>
+    </avp>
+    <avp name="Local-Time-Zone-Indication" code="718" vendor-id="10415">
+      <data type="Enumerated"/>
+    </avp>
+    <avp name="Udr-Flags" code="719" vendor-id="10415">
+      <data type="Unsigned32"/>
+    </avp>
+    <avp name="Call-Reference-Info" code="720" vendor-id="10415">
+      <data type="Grouped"/>
+    </avp>
+    <avp name="Server-Name" code="602" vendor-id="10415">
+      <data type="UTF8String"/>
+    </avp>
+    <avp name="Oc-Supported-Features" code="621">
+      <data type="Grouped"/>
+    </avp>
+    <avp name="Oc-Olr" code="623">
+      <data type="Grouped"/>
+    </avp>
+    <avp name="Supported-Features" code="628" vendor-id="10415">
+      <data type="Grouped"/>
+    </avp>
+    <avp name="Wildcarded-Public-Identity" code="634" vendor-id="10415">
+      <data type="UTF8String"/>
+    </avp>
+    <avp name="Wildcarded-Impu" code="636" vendor-id="10415">
+      <data type="UTF8String"/>
+    </avp>
+  </application>
+</diameter>

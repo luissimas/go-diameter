@@ -17,16 +17,24 @@ const (
 	CreditControl             = 272
 	DeviceWatchdog            = 280
 	DisconnectPeer            = 282
+	LocationInfo              = 302
+	MultimediaAuth            = 303
 	MultimediaAuthentication  = 303
 	Notify                    = 323
+	ProfileUpdate             = 307
 	PurgeUE                   = 321
+	PushNotification          = 309
+	PushProfile               = 305
 	ReAuth                    = 258
 	RegistrationTermination   = 304
 	Reset                     = 322
 	ServerAssignment          = 301
 	SessionTermination        = 275
 	SpendingLimit             = 8388635
+	SubscribeNotifications    = 308
 	UpdateLocation            = 316
+	UserAuthorization         = 300
+	UserData                  = 306
 )
 
 // Short Command Names
@@ -49,10 +57,16 @@ const (
 	DPR = "DPR"
 	DWA = "DWA"
 	DWR = "DWR"
+	LIA = "LIA"
+	LIR = "LIR"
 	MAA = "MAA"
 	MAR = "MAR"
 	NOA = "NOA"
 	NOR = "NOR"
+	PNA = "PNA"
+	PNR = "PNR"
+	PPA = "PPA"
+	PPR = "PPR"
 	PUA = "PUA"
 	PUR = "PUR"
 	RAA = "RAA"
@@ -65,8 +79,14 @@ const (
 	SAR = "SAR"
 	SLA = "SLA"
 	SLR = "SLR"
+	SNA = "SNA"
+	SNR = "SNR"
 	STA = "STA"
 	STR = "STR"
+	UAA = "UAA"
+	UAR = "UAR"
+	UDA = "UDA"
+	UDR = "UDR"
 	ULA = "ULA"
 	ULR = "ULR"
 )
