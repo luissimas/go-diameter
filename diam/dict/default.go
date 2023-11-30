@@ -495,9 +495,9 @@ var baseXML = `<?xml version="1.0" encoding="UTF-8"?>
 
 		<avp name="Vendor-Specific-Application-Id" code="260" must="M" may="P" must-not="V" may-encrypt="-">
 			<data type="Grouped">
-				<rule avp="Vendor-Id" required="false" max="1"/>
-				<rule avp="Auth-Application-Id" required="true" max="1"/>
-				<rule avp="Acct-Application-Id" required="true" max="1"/>
+				<rule avp="Vendor-Id" required="true" max="1"/>
+				<rule avp="Auth-Application-Id" required="false" max="1"/>
+				<rule avp="Acct-Application-Id" required="false" max="1"/>
 			</data>
 		</avp>
 
@@ -2540,7 +2540,7 @@ var tgppcxXML = `<diameter>
         <rule avp="Oc-Supported-Features" required="False" max="1"/>
         <rule avp="Oc-Olr" required="False" max="1"/>
         <rule avp="Supported-Features" required="False" max="1"/>
-        <rule avp="User-Data" required="False" max="1"/>
+        <rule avp="User-Data-Cx" required="False" max="1"/>
         <rule avp="Charging-Information" required="False" max="1"/>
         <rule avp="Associated-Identities" required="False" max="1"/>
         <rule avp="Loose-Route-Indication" required="False" max="1"/>
@@ -2683,7 +2683,7 @@ var tgppcxXML = `<diameter>
         <rule avp="User-Name" required="True" max="1"/>
         <rule avp="Drmp" required="False" max="1"/>
         <rule avp="Supported-Features" required="False" max="1"/>
-        <rule avp="User-Data" required="False" max="1"/>
+        <rule avp="User-Data-Cx" required="False" max="1"/>
         <rule avp="Charging-Information" required="False" max="1"/>
         <rule avp="Sip-Auth-Data-Item" required="False" max="1"/>
         <rule avp="Allowed-Awf-Wwsf-Identities" required="False" max="1"/>
@@ -2707,9 +2707,6 @@ var tgppcxXML = `<diameter>
     </command>
     <avp name="User-Name" code="1">
       <data type="UTF8String"/>
-    </avp>
-    <avp name="Vendor-Specific-Application-Id" code="260">
-      <data type="Grouped"/>
     </avp>
     <avp name="Session-Id" code="263">
       <data type="UTF8String"/>
@@ -2783,7 +2780,7 @@ var tgppcxXML = `<diameter>
     <avp name="Server-Capabilities" code="603" vendor-id="10415">
       <data type="Grouped"/>
     </avp>
-    <avp name="User-Data" code="606" vendor-id="10415">
+    <avp name="User-Data-Cx" code="606" vendor-id="10415">
       <data type="OctetString"/>
     </avp>
     <avp name="Sip-Number-Auth-Items" code="607" vendor-id="10415">
@@ -5253,7 +5250,7 @@ var tgpprorfXML = `<?xml version="1.0" encoding="UTF-8"?>
 			</data>
 		</avp>
 
-		<avp name="User-Data" code="606" must="V,M"	may="-" must-not="-" may-encrypt="N" vendor-id="10415">
+		<avp name="User-Data-Cx" code="606" must="V,M"	may="-" must-not="-" may-encrypt="N" vendor-id="10415">
 			<data type="OctetString"/>
 		</avp>
 
@@ -6449,7 +6446,7 @@ var tgppshXML = `<diameter>
         <rule avp="Supported-Features" required="False" max="1"/>
         <rule avp="Wildcarded-Public-Identity" required="False" max="1"/>
         <rule avp="Wildcarded-Impu" required="False" max="1"/>
-        <rule avp="User-Data" required="False" max="1"/>
+        <rule avp="User-Data-Sh" required="False" max="1"/>
         <rule avp="Oc-Supported-Features" required="False" max="1"/>
         <rule avp="Oc-Olr" required="False" max="1"/>
         <rule avp="Failed-Avp" required="False" max="1"/>
@@ -6467,7 +6464,7 @@ var tgppshXML = `<diameter>
         <rule avp="Destination-Realm" required="True" max="1"/>
         <rule avp="User-Identity" required="True" max="1"/>
         <rule avp="Data-Reference" required="True" max="1"/>
-        <rule avp="User-Data" required="True" max="1"/>
+        <rule avp="User-Data-Sh" required="True" max="1"/>
         <rule avp="Drmp" required="False" max="1"/>
         <rule avp="Destination-Host" required="False" max="1"/>
         <rule avp="Supported-Features" required="False" max="1"/>
@@ -6539,7 +6536,7 @@ var tgppshXML = `<diameter>
         <rule avp="Wildcarded-Public-Identity" required="False" max="1"/>
         <rule avp="Wildcarded-Impu" required="False" max="1"/>
         <rule avp="Supported-Features" required="False" max="1"/>
-        <rule avp="User-Data" required="False" max="1"/>
+        <rule avp="User-Data-Sh" required="False" max="1"/>
         <rule avp="Expiry-Time" required="False" max="1"/>
         <rule avp="Oc-Supported-Features" required="False" max="1"/>
         <rule avp="Oc-Olr" required="False" max="1"/>
@@ -6558,7 +6555,7 @@ var tgppshXML = `<diameter>
         <rule avp="Destination-Host" required="True" max="1"/>
         <rule avp="Destination-Realm" required="True" max="1"/>
         <rule avp="User-Identity" required="True" max="1"/>
-        <rule avp="User-Data" required="True" max="1"/>
+        <rule avp="User-Data-Sh" required="True" max="1"/>
         <rule avp="Drmp" required="False" max="1"/>
         <rule avp="Supported-Features" required="False" max="1"/>
         <rule avp="Wildcarded-Public-Identity" required="False" max="1"/>
@@ -6584,9 +6581,6 @@ var tgppshXML = `<diameter>
     </command>
     <avp name="User-Name" code="1">
       <data type="UTF8String"/>
-    </avp>
-    <avp name="Vendor-Specific-Application-Id" code="260">
-      <data type="Grouped"/>
     </avp>
     <avp name="Session-Id" code="263">
       <data type="UTF8String"/>
@@ -6630,7 +6624,7 @@ var tgppshXML = `<diameter>
     <avp name="User-Identity" code="700" vendor-id="10415">
       <data type="Grouped"/>
     </avp>
-    <avp name="User-Data" code="702" vendor-id="10415">
+    <avp name="User-Data-Sh" code="702" vendor-id="10415">
       <data type="OctetString"/>
     </avp>
     <avp name="Data-Reference" code="703" vendor-id="10415">

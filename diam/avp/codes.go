@@ -744,9 +744,9 @@ const (
 	UsedServiceUnit                            = 446
 	UserAuthorizationType                      = 623
 	UserCSGInformation                         = 2319
+	UserDataAlreadyAvailable                   = 624
 	UserDataCx                                 = 606
 	UserDataSh                                 = 702
-	UserDataAlreadyAvailable                   = 624
 	UserEquipmentInfo                          = 458
 	UserEquipmentInfoType                      = 459
 	UserEquipmentInfoValue                     = 460

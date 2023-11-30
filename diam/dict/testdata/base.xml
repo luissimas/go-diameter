@@ -453,9 +453,9 @@
 
 		<avp name="Vendor-Specific-Application-Id" code="260" must="M" may="P" must-not="V" may-encrypt="-">
 			<data type="Grouped">
-				<rule avp="Vendor-Id" required="false" max="1"/>
-				<rule avp="Auth-Application-Id" required="true" max="1"/>
-				<rule avp="Acct-Application-Id" required="true" max="1"/>
+				<rule avp="Vendor-Id" required="true" max="1"/>
+				<rule avp="Auth-Application-Id" required="false" max="1"/>
+				<rule avp="Acct-Application-Id" required="false" max="1"/>
 			</data>
 		</avp>
 
